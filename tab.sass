@@ -1,0 +1,36 @@
+.tabs
+  display: flex
+  flex-wrap: wrap
+  max-width: 750px
+  margin-left: auto
+  margin-right: auto
+  background: #ced4da
+
+.tab
+  &-input
+    position: absolute
+    visibility: hidden
+  &-input:checked + &-label + &-body
+    display: block
+  &-input:checked + &-label
+    background: #fff
+  &-label
+    width: auto
+    padding: 15px 20px
+    background: #dde3e9
+    cursor: pointer
+    font-weight: 500
+    color: #252525
+    margin: 5px 5px 0
+    &:hover
+      background: #d6dce2
+    &:active
+      background: #fff
+  &-input:focus + &-label
+    border: 3px solid #000
+    z-index: 1
+  &-body
+    display: none
+    padding: 20px
+    background: #fff
+    order: 99
