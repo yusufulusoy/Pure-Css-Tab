@@ -44,7 +44,7 @@ body {
 
 .tab-body {
   display: none;
-  width: 100%
+  width: 100%;
   padding: 20px;
   background: #fff;
   order: 99; }
